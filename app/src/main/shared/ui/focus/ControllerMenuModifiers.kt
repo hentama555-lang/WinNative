@@ -26,7 +26,7 @@ import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
-private val AccentBorder = Color(0xFF00D7F5)
+private val AccentBorder = Color(0xFFFF7A00)
 
 fun Modifier.controllerFocusBorder(
     cornerRadius: Dp = 10.dp,

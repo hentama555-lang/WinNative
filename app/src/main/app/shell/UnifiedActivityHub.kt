@@ -96,7 +96,6 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.draw.drawWithContent
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusProperties
 import androidx.compose.ui.focus.focusRequester
@@ -1433,7 +1432,6 @@ internal fun UnifiedActivity.TopBar(
                             Modifier
                                 .width(tabWidth * visibleCount + tabSideGutter * 2)
                                 .height(44.dp)
-                                .shadow(8.dp, tabBarShape, spotColor = Color.Black.copy(alpha = 0.5f))
                                 .clip(tabBarShape)
                                 .background(CardDark)
                                 .border(1.dp, CardBorder, tabBarShape),
@@ -1753,9 +1751,9 @@ internal fun UnifiedActivity.TopBar(
                             .widthIn(max = 600.dp)
                             .fillMaxWidth(0.7f)
                             .height(44.dp)
-                            .shadow(8.dp, RoundedCornerShape(24.dp), spotColor = Color.Black.copy(alpha = 0.4f))
                             .clip(RoundedCornerShape(24.dp))
-                            .background(SurfaceDark),
+                            .background(SurfaceDark)
+                            .border(1.dp, CardBorder, RoundedCornerShape(24.dp)),
                     contentAlignment = Alignment.CenterStart,
                 ) {
                     Row(

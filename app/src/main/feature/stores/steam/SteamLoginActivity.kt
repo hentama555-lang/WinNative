@@ -54,13 +54,13 @@ import com.winlator.cmod.shared.ui.outlinedSwitchColors
 import timber.log.Timber
 
 // Palette (matches Settings > Stores)
-private val BgDark = Color(0xFF18181D)
+private val BgDark = Color(0xFF141414)
 private val CardDark = Color(0xFF1C1C2A)
 private val CardBorder = Color(0xFF2A2A3A)
 private val IconBoxBg = Color(0xFF242434)
-private val Accent = Color(0xFF1A9FFF)
-private val TextPrimary = Color(0xFFF0F4FF)
-private val TextSecondary = Color(0xFF7A8FA8)
+private val Accent = Color(0xFFFF7A00)
+private val TextPrimary = Color(0xFFF5F0EA)
+private val TextSecondary = Color(0xFFAD9782)
 private val DangerRed = Color(0xFFFF7A88)
 
 class SteamLoginActivity : FixedFontScaleComponentActivity() {

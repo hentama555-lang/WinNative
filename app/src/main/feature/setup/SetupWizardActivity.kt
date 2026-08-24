@@ -149,15 +149,15 @@ private data class Particle(
 
 private val SetupDownloadChaseGradientStops =
     arrayOf(
-        0.00f to Color(0xFF2196F3),
-        0.125f to Color(0xFF29B6F6),
-        0.25f to Color(0xFF00E5FF),
-        0.375f to Color(0xFF29B6F6),
-        0.50f to Color(0xFF2196F3),
-        0.625f to Color(0xFF29B6F6),
-        0.75f to Color(0xFF00E5FF),
-        0.875f to Color(0xFF29B6F6),
-        1.00f to Color(0xFF2196F3),
+        0.00f to Color(0xFFFF7A00),
+        0.125f to Color(0xFFFFA940),
+        0.25f to Color(0xFFFFD180),
+        0.375f to Color(0xFFFFA940),
+        0.50f to Color(0xFFFF7A00),
+        0.625f to Color(0xFFFFA940),
+        0.75f to Color(0xFFFFD180),
+        0.875f to Color(0xFFFFA940),
+        1.00f to Color(0xFFFF7A00),
     )
 
 private const val SetupGlassSurfaceAlpha = 0.03f
@@ -175,7 +175,7 @@ private data class TabInfo(
     val highlight: Boolean = false,
 )
 
-private val NavHighlightAccent = Color(0xFF57CBDE)
+private val NavHighlightAccent = Color(0xFFFF7A00)
 
 private fun Modifier.navHighlight(highlighted: Boolean, cornerRadius: Dp): Modifier =
     drawBehind {
@@ -898,10 +898,10 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
             WinNativeTheme(
                 colorScheme =
                     darkColorScheme(
-                        primary = Color(0xFF57CBDE),
-                        secondary = Color(0xFF3B82F6),
+                        primary = Color(0xFFFF7A00),
+                        secondary = Color(0xFFFFA940),
                         background = Color(0xFF141B24),
-                        surface = Color(0xFF1E252E),
+                        surface = Color(0xFF241C15),
                     ),
             ) {
                 androidx.compose.runtime.CompositionLocalProvider(
@@ -1670,7 +1670,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
             modifier =
                 Modifier
                     .fillMaxSize()
-                    .background(Color(0xFF111822))
+                    .background(Color(0xFF120E0A))
                     .drawBehind {
                         val w = size.width
                         val h = size.height
@@ -1689,8 +1689,8 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                                 Brush.radialGradient(
                                     colors =
                                         listOf(
-                                            Color(0xFF57CBDE).copy(alpha = 0.04f * p),
-                                            Color(0xFF57CBDE).copy(alpha = 0.015f * p),
+                                            Color(0xFFFF7A00).copy(alpha = 0.04f * p),
+                                            Color(0xFFFF7A00).copy(alpha = 0.015f * p),
                                             Color.Transparent,
                                         ),
                                     center = c1,
@@ -1711,8 +1711,8 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                                 Brush.radialGradient(
                                     colors =
                                         listOf(
-                                            Color(0xFF3B82F6).copy(alpha = 0.035f * p),
-                                            Color(0xFF3B82F6).copy(alpha = 0.01f * p),
+                                            Color(0xFFFFA940).copy(alpha = 0.035f * p),
+                                            Color(0xFFFFA940).copy(alpha = 0.01f * p),
                                             Color.Transparent,
                                         ),
                                     center = c2,
@@ -1757,7 +1757,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                                     else -> 1f
                                 } * 0.12f
                             drawCircle(
-                                color = Color(0xFF57CBDE).copy(alpha = alpha),
+                                color = Color(0xFFFF7A00).copy(alpha = alpha),
                                 radius = pt.size.dp.toPx(),
                                 center = Offset(px, py),
                             )
@@ -1788,7 +1788,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Text(
                                 text = stringResource(R.string.setup_wizard_title).uppercase(),
-                                color = Color(0xFF57CBDE),
+                                color = Color(0xFFFF7A00),
                                 fontFamily = InterFont,
                                 fontWeight = FontWeight.SemiBold,
                                 fontSize = 9.sp,
@@ -1799,7 +1799,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                                 modifier =
                                     Modifier
                                         .size(3.dp)
-                                        .background(Color(0xFF4A5260), RoundedCornerShape(2.dp)),
+                                        .background(Color(0xFF4A3F30), RoundedCornerShape(2.dp)),
                             )
                             Spacer(Modifier.width(8.dp))
                             Text(
@@ -1949,13 +1949,13 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
             }
         }
         val animatedProgress = progressAnim.value
-        val turquoise = Color(0xFF57CBDE)
+        val turquoise = Color(0xFFFF7A00)
         val glassShape = RoundedCornerShape(12.dp)
         Row(
             modifier =
                 Modifier
                     .fillMaxWidth()
-                    .background(Color(0xFF111822).copy(alpha = SetupGlassTransferAlpha), glassShape)
+                    .background(Color(0xFF120E0A).copy(alpha = SetupGlassTransferAlpha), glassShape)
                     .border(1.dp, turquoise.copy(alpha = 0.55f), glassShape)
                     .padding(horizontal = 14.dp, vertical = 10.dp),
             verticalAlignment = Alignment.CenterVertically,
@@ -2111,9 +2111,9 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                 val active = i == current
                 val completed = i < current
                 val reached = active || completed
-                val bg = if (reached) Color(0xFF57CBDE) else Color(0xFF111822)
-                val borderC = if (reached) Color(0xFF57CBDE) else Color(0xFF323C4A)
-                val textC = if (reached) Color(0xFF111822) else Color(0xFF8B949E)
+                val bg = if (reached) Color(0xFFFF7A00) else Color(0xFF120E0A)
+                val borderC = if (reached) Color(0xFFFF7A00) else Color(0xFF323C4A)
+                val textC = if (reached) Color(0xFF120E0A) else Color(0xFF8B949E)
                 Box(
                     modifier =
                         Modifier
@@ -2136,7 +2136,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                             Modifier
                                 .width(18.dp)
                                 .height(2.dp)
-                                .background(if (i < current) Color(0xFF57CBDE) else Color(0xFF323C4A)),
+                                .background(if (i < current) Color(0xFFFF7A00) else Color(0xFF323C4A)),
                     )
                 }
             }
@@ -2174,7 +2174,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
         onClick: () -> Unit,
     ) {
         val borderColor by animateColorAsState(
-            targetValue = if (enabled) Color(0xFF57CBDE) else Color(0xFF222D3D),
+            targetValue = if (enabled) Color(0xFFFF7A00) else Color(0xFF222D3D),
             animationSpec = tween(300),
             label = "accentBorder",
         )
@@ -2186,8 +2186,8 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
             border = BorderStroke(1.5.dp, borderColor),
             colors =
                 ButtonDefaults.outlinedButtonColors(
-                    contentColor = Color(0xFF57CBDE),
-                    disabledContentColor = Color(0xFF4A5260),
+                    contentColor = Color(0xFFFF7A00),
+                    disabledContentColor = Color(0xFF4A3F30),
                 ),
         ) {
             Text(label, fontFamily = InterFont, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
@@ -2313,13 +2313,13 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
         val recommendedLabel = stringResource(R.string.setup_wizard_recommended_label)
         val driversLabel = stringResource(R.string.settings_drivers_title)
         var selectedTab by remember { mutableStateOf("recommended") }
-        val turquoise = Color(0xFF57CBDE)
+        val turquoise = Color(0xFFFF7A00)
         val completedTurquoise = Color(0xFF3FAFBE)
         val glassShape = RoundedCornerShape(12.dp)
         val glassSurface = Color.White.copy(alpha = SetupGlassSurfaceAlpha)
         val glassSurfaceActive = turquoise.copy(alpha = SetupGlassActiveSurfaceAlpha)
         val glassBorder = Color.White.copy(alpha = SetupGlassBorderAlpha)
-        val mutedDot = Color(0xFF4A5568)
+        val mutedDot = Color(0xFF5A4E40)
 
         val tabs =
             buildList {
@@ -2562,11 +2562,11 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                                                         fontSize = 11.sp,
                                                         color =
                                                             if (highlightInstallAll) {
-                                                                Color(0xFFF0F4FF)
+                                                                Color(0xFFF5F0EA)
                                                             } else if (allRecommendedInstalled) {
                                                                 completedTurquoise
                                                             } else if (!installAllEnabled) {
-                                                                Color(0xFF4A5260)
+                                                                Color(0xFF4A3F30)
                                                             } else {
                                                                 turquoise
                                                             },
@@ -2717,7 +2717,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
         highlighted: Boolean = false,
         sizeBytes: Long? = null,
     ) {
-        val turquoise = Color(0xFF57CBDE)
+        val turquoise = Color(0xFFFF7A00)
         val completedTurquoise = Color(0xFF3FAFBE)
         val cardShape = RoundedCornerShape(12.dp)
         val bgColor =
@@ -2969,11 +2969,11 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
         val creating = creatingContainer.value
 
         val hasContainer = existingContainer != null
-        val turquoise = Color(0xFF57CBDE)
+        val turquoise = Color(0xFFFF7A00)
         val completedTurquoise = Color(0xFF3FAFBE)
         val cardShape = RoundedCornerShape(12.dp)
         val bgColor = Color.White.copy(alpha = SetupGlassSurfaceAlpha)
-        val activeColor = if (hasContainer) completedTurquoise else Color(0xFF4A5260)
+        val activeColor = if (hasContainer) completedTurquoise else Color(0xFF4A3F30)
         val outlineColor =
             if (hasContainer) {
                 completedTurquoise.copy(alpha = SetupGlassCompletedSoftBorderAlpha)
@@ -3083,7 +3083,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                             contentColor = turquoise,
                             disabledContainerColor =
                                 if (creating) turquoise.copy(alpha = 0.16f) else Color.White.copy(alpha = 0.08f),
-                            disabledContentColor = if (creating) turquoise else Color(0xFF4A5260),
+                            disabledContentColor = if (creating) turquoise else Color(0xFF4A3F30),
                         ),
                 ) {
                     if (creating) {
@@ -3139,7 +3139,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
         progress: Float? = null,
         highlighted: Boolean = false,
     ) {
-        val turquoise = Color(0xFF57CBDE)
+        val turquoise = Color(0xFFFF7A00)
         val completedTurquoise = Color(0xFF3FAFBE)
         val glassShape = RoundedCornerShape(12.dp)
         val glassSurface =
@@ -3178,7 +3178,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                                 when {
                                     completed -> completedTurquoise
                                     progress != null -> turquoise
-                                    else -> Color(0xFF4A5260)
+                                    else -> Color(0xFF4A3F30)
                                 },
                                 RoundedCornerShape(3.dp),
                             ),
@@ -3254,7 +3254,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                             when {
                                 completed -> completedTurquoise
                                 buttonFocused -> Color(0xFFE6EDF3)
-                                else -> Color(0xFF111822)
+                                else -> Color(0xFF120E0A)
                             },
                         disabledContainerColor =
                             when {
@@ -3266,7 +3266,7 @@ class SetupWizardActivity : FixedFontScaleFragmentActivity() {
                             when {
                                 completed -> completedTurquoise
                                 progress != null -> Color(0xFFE6EDF3)
-                                else -> Color(0xFF4A5260)
+                                else -> Color(0xFF4A3F30)
                             },
                     ),
             ) {

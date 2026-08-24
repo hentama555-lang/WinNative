@@ -89,7 +89,7 @@ class ContainerProgressPopup(
                                 title = stringResource(titleRes),
                                 icon = Icons.Outlined.Info,
                                 progress = progress.value,
-                                accentColor = Color(0xFF1A9FFF),
+                                accentColor = Color(0xFFFF7A00),
                                 modifier = Modifier.widthIn(min = 280.dp, max = 360.dp),
                             )
                         }

@@ -119,10 +119,10 @@ import java.util.Locale
 
 private val LaunchBlack = Color.Black
 private val LaunchCard = Color(0xFF12121B)
-private val LaunchAccent = Color(0xFF1A9FFF)
-private val LaunchAccentGlow = Color(0xFF58A6FF)
-private val LaunchTextPrimary = Color(0xFFF0F4FF)
-private val LaunchTextSecondary = Color(0xFF93A6BC)
+private val LaunchAccent = Color(0xFFFF7A00)
+private val LaunchAccentGlow = Color(0xFFFFB74D)
+private val LaunchTextPrimary = Color(0xFFF5F0EA)
+private val LaunchTextSecondary = Color(0xFFC7A88F)
 private val LaunchDanger = Color(0xFFFF6B6B)
 
 @Composable
@@ -1196,9 +1196,9 @@ private fun LaunchPlayButton(
             Brush.horizontalGradient(
                 colors =
                     listOf(
-                        Color(0xFF00B4D8).copy(alpha = 0.38f),
+                        Color(0xFFFFD180).copy(alpha = 0.38f),
                         LaunchAccent.copy(alpha = 0.38f),
-                        Color(0xFF7B2FF7).copy(alpha = 0.38f),
+                        Color(0xFFE55A00).copy(alpha = 0.38f),
                     ),
             )
         } else {

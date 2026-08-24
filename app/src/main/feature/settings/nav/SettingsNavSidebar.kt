@@ -74,18 +74,18 @@ import com.winlator.cmod.shared.ui.widget.chasingBorder
 
 // ─── Palette ────────────────────────────────────────────────────────
 
-private val SidebarBgTop = Color(0xFF171E2E)
-private val SidebarBgBot = Color(0xFF11161F)
-private val SectionLabelClr = Color(0xFF3D4F65)
-private val HeaderTextClr = Color(0xFF58708C)
-private val TextNormal = Color(0xFF7A8FA8)
-private val TextSelected = Color(0xFFF0F4FF)
-private val IconMuted = Color(0xFF4A7A8F)
-private val SelectedBg = Color(0xFF131D2F)
-private val DividerColor = Color(0xFF212C3F)
+private val SidebarBgTop = Color(0xFF1E1712)
+private val SidebarBgBot = Color(0xFF141414)
+private val SectionLabelClr = Color(0xFF6B5A47)
+private val HeaderTextClr = Color(0xFF8F7862)
+private val TextNormal = Color(0xFFAD9782)
+private val TextSelected = Color(0xFFF5F0EA)
+private val IconMuted = Color(0xFF8F6A46)
+private val SelectedBg = Color(0xFF241C15)
+private val DividerColor = Color(0xFF2E2117)
 
-private val AccentSelected = Color(0xFF4FC3F7)
-private val AccentPressed = Color(0xFF8BDEFF)
+private val AccentSelected = Color(0xFFFFB74D)
+private val AccentPressed = Color(0xFFFFCC80)
 
 private val InterFamily = FontFamily(Font(R.font.inter_medium, FontWeight.Medium))
 

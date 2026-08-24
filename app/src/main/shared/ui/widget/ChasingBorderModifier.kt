@@ -53,11 +53,11 @@ fun Modifier.chasingBorder(
         val gradientColors =
             remember {
                 intArrayOf(
-                    0xFF2196F3.toInt(), // blue
-                    0xFF29B6F6.toInt(), // sky blue
-                    0xFF00E5FF.toInt(), // electric cyan
-                    0xFF29B6F6.toInt(), // sky blue
-                    0xFF2196F3.toInt(), // blue (seamless)
+                    0xFFFF7A00.toInt(), // blue
+                    0xFFFFA940.toInt(), // sky blue
+                    0xFFFFD180.toInt(), // electric cyan
+                    0xFFFFA940.toInt(), // sky blue
+                    0xFFFF7A00.toInt(), // blue (seamless)
                 )
             }
         val gradientStops = remember { floatArrayOf(0f, 0.25f, 0.50f, 0.75f, 1f) }

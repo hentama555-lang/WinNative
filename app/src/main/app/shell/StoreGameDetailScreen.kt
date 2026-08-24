@@ -121,10 +121,10 @@ internal data class StoreDlcItem(
 
 private val StoreBlack = Color.Black
 private val StoreCard = Color(0xFF12121B)
-private val StoreAccent = Color(0xFF1A9FFF)
-private val StoreAccentGlow = Color(0xFF58A6FF)
-private val StoreTextPrimary = Color(0xFFF0F4FF)
-private val StoreTextSecondary = Color(0xFF93A6BC)
+private val StoreAccent = Color(0xFFFF7A00)
+private val StoreAccentGlow = Color(0xFFFFB74D)
+private val StoreTextPrimary = Color(0xFFF5F0EA)
+private val StoreTextSecondary = Color(0xFFC7A88F)
 private val StoreDanger = Color(0xFFFF6B6B)
 
 @Composable
@@ -1121,9 +1121,9 @@ private fun StoreCtaButton(
         Brush.horizontalGradient(
             colors =
                 listOf(
-                    Color(0xFF00B4D8).copy(alpha = 0.38f),
+                    Color(0xFFFFD180).copy(alpha = 0.38f),
                     StoreAccent.copy(alpha = 0.38f),
-                    Color(0xFF7B2FF7).copy(alpha = 0.38f),
+                    Color(0xFFE55A00).copy(alpha = 0.38f),
                 ),
         )
     val disabledBrush =

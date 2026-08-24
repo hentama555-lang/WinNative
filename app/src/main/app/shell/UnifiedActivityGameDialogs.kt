@@ -102,7 +102,6 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.draw.drawWithContent
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusProperties
 import androidx.compose.ui.focus.focusRequester
@@ -3147,9 +3146,9 @@ internal fun UnifiedActivity.LibraryGameDetailDialog(
                                 .align(Alignment.TopEnd)
                                 .padding(16.dp)
                                 .size(42.dp)
-                                .shadow(8.dp, CircleShape, spotColor = Color.Black.copy(alpha = 0.35f))
                                 .clip(CircleShape)
-                                .background(BgDark.copy(alpha = 0.7f)),
+                                .background(BgDark.copy(alpha = 0.7f))
+                                .border(1.dp, Color.White.copy(alpha = 0.12f), CircleShape),
                     ) {
                         Icon(Icons.Outlined.Close, contentDescription = "Close", tint = TextPrimary)
                     }

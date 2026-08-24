@@ -148,12 +148,12 @@ private data class Particle(
     val phaseOffset: Float,
 )
 
-private val BgTop = Color(0xFF07090F)
-private val BgBottom = Color(0xFF0C1018)
-private val TextPrimary = Color(0xFFF5F8FF)
-private val TextSecondary = Color(0xFFA1B1C8)
-private val TextDim = Color(0xFF65748B)
-private val TrackColor = Color(0xFF202A3A)
+private val BgTop = Color(0xFF0D0906)
+private val BgBottom = Color(0xFF120E0A)
+private val TextPrimary = Color(0xFFF5F0EA)
+private val TextSecondary = Color(0xFFC7A88F)
+private val TextDim = Color(0xFF8F7862)
+private val TrackColor = Color(0xFF241C15)
 
 /**
  * Height reserved at the bottom for the status line and the progress bar, so
@@ -181,7 +181,7 @@ private fun badgeColor(value: String): Color =
         "EPIC" -> Color(0xFFB8BAC4)
         "GOG" -> Color(0xFFC55CFF)
         "CUSTOM" -> Color(0xFF4FE3C1)
-        else -> Color(0xFF57CBDE)
+        else -> Color(0xFFFF7A00)
     }
 
 @Composable

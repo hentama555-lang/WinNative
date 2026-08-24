@@ -89,14 +89,14 @@ private val CardDark = Color(0xFF1C1C2A)
 private val CardDarker = Color(0xFF15151E)
 private val CardBorder = Color(0xFF2A2A3A)
 private val IconBoxBg = Color(0xFF242434)
-private val SurfaceDark = Color(0xFF21212A)
-private val Accent = Color(0xFF1A9FFF)
+private val SurfaceDark = Color(0xFF1E1712)
+private val Accent = Color(0xFFFF7A00)
 private val SuccessGreen = Color(0xFF5BD68F)
 private val DangerRed = Color(0xFFFF7A88)
 private val WarningAmber = Color(0xFFFFB454)
 private val TextPrimary = Color(0xFFD6DAE0)
-private val TextSecondary = Color(0xFF7A8FA8)
-private val NavHighlight = Color(0xFF4FC3F7)
+private val TextSecondary = Color(0xFFAD9782)
+private val NavHighlight = Color(0xFFFFB74D)
 
 // State
 

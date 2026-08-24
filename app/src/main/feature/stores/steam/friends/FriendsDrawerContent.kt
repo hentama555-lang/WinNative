@@ -72,17 +72,17 @@ import com.winlator.cmod.shared.ui.nav.LocalPaneNav
 import com.winlator.cmod.shared.ui.nav.PaneNavRegistry
 import com.winlator.cmod.shared.ui.nav.paneNavItem
 
-private val BgDark = Color(0xFF18181D)
-private val SurfaceDark = Color(0xFF1E252E)
+private val BgDark = Color(0xFF141414)
+private val SurfaceDark = Color(0xFF241C15)
 private val CardBorder = Color(0xFF2A2A3A)
-private val Accent = Color(0xFF1A9FFF)
-private val TextPrimary = Color(0xFFF0F4FF)
-private val TextSecondary = Color(0xFF7A8FA8)
+private val Accent = Color(0xFFFF7A00)
+private val TextPrimary = Color(0xFFF5F0EA)
+private val TextSecondary = Color(0xFFAD9782)
 private val StatusOnline = Color(0xFF3FB950)
 private val StatusAway = Color(0xFFF0C040)
 private val StatusOffline = Color(0xFF6E7681)
 private val WsBg = Color(0xFF12121B)
-private val AccentGlow = Color(0xFF58A6FF)
+private val AccentGlow = Color(0xFFFFB74D)
 
 private fun statusColor(state: EPersonaState): Color = when (state) {
     EPersonaState.Online, EPersonaState.LookingToTrade, EPersonaState.LookingToPlay -> StatusOnline

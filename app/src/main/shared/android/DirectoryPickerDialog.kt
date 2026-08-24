@@ -156,7 +156,7 @@ object DirectoryPickerDialog {
     private val CardBorder = WinNativeOutline
     private val IconBoxBg = Color(0xFF242434)
     private val Accent = WinNativeAccent
-    private val NavHighlight = Color(0xFF4FC3F7)
+    private val NavHighlight = Color(0xFFFFB74D)
     private val TextPrimary = WinNativeTextPrimary
     private val TextSecondary = WinNativeTextSecondary
 
@@ -1342,7 +1342,7 @@ object DirectoryPickerDialog {
                 onDismissRequest = { onExpandedChange(false) },
                 offset = DpOffset(x = 0.dp, y = (-8).dp),
                 shape = RoundedCornerShape(10.dp),
-                containerColor = Color(0xFF24243B),
+                containerColor = Color(0xFF241C15),
                 border = BorderStroke(1.dp, CardBorder),
                 properties = PopupProperties(focusable = false),
                 modifier = Modifier.widthIn(min = 220.dp, max = 420.dp),
@@ -1522,7 +1522,7 @@ object DirectoryPickerDialog {
                 expanded = menuExpanded,
                 onDismissRequest = onMenuDismiss,
                 shape = RoundedCornerShape(10.dp),
-                containerColor = Color(0xFF24243B),
+                containerColor = Color(0xFF241C15),
                 border = BorderStroke(1.dp, CardBorder),
                 properties = PopupProperties(focusable = false),
                 modifier = Modifier.widthIn(min = 180.dp, max = 240.dp),
@@ -1903,7 +1903,7 @@ object DirectoryPickerDialog {
                 onDismissRequest = { onExpandedChange(false) },
                 offset = DpOffset(x = 0.dp, y = (-8).dp),
                 shape = RoundedCornerShape(10.dp),
-                containerColor = Color(0xFF24243B),
+                containerColor = Color(0xFF241C15),
                 border = BorderStroke(1.dp, CardBorder),
                 properties = PopupProperties(focusable = false),
                 modifier = Modifier.widthIn(min = 200.dp, max = 420.dp),

@@ -287,12 +287,12 @@ private fun NarrowSettingsContentBackBar(title: String, onBack: () -> Unit) {
         Icon(
             Icons.AutoMirrored.Outlined.ArrowBack,
             contentDescription = stringResource(R.string.common_ui_back),
-            tint = Color(0xFF4FC3F7),
+            tint = Color(0xFFFFB74D),
             modifier = Modifier.size(22.dp),
         )
         Text(
             title,
-            color = Color(0xFFF0F4FF),
+            color = Color(0xFFF5F0EA),
             style = MaterialTheme.typography.titleMedium,
         )
     }
